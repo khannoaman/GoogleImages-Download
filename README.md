@@ -1,4 +1,4 @@
-﻿Google Images Download 
+Google Images Download 
 ===================
 
 
