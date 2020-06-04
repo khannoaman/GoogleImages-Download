@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="GoogleImages-Download",
-    version="1.0.0",
+    version="1.0.6",
     description="A Python Script for downloading bulk of images from google.",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -23,10 +23,10 @@ setup(
     ],
     packages=["GoogleImages_Download"],
     include_package_data=True,
-    install_requires=["requests","selenium","tqdm"],
+    install_requires=["requests","selenium","tqdm","chromedriver_binary","chromedriver_binary==83.0.4103.39.0"],
     entry_points={
         "console_scripts": [
-            "GoogleImages-Download=GoogleImages_Download.Download_main:main",
+            "GoogleImages-Download=GoogleImages_Download.GoogleImagesDownload:main",
         ]
     },
 )
